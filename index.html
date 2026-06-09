@@ -100,9 +100,88 @@
             <h2><a href="tel:+72223332255">+7 (222) 333-22-55</a></h2>
             <h2>ИЛИ ОСТАВЬ НАМ СВОЙ НОМЕР, И МЫ ПЕРЕЗВОНИМ САМИ</h2>
             
-            <div class="form_contact"></div>
-            <div class="form_download"></div>
-            <div class="form_submit"></div>
+            <form class="feedback_form" action="#" method="post">
+
+                <div class="form_contact">
+                    <div class="form_row">
+                        <label for="contact_name">Ваше имя *</label>
+                        <input id="contact_name" type="text" name="name" required
+                            pattern="[а-яА-ЯёЁ\-\s]{2,20}"
+                            placeholder="Иван Иванов"
+                            title="Имя на кириллице, от 2 до 20 символов">
+                    </div>
+
+                    <div class="form_row">
+                        <label for="contact_phone">Номер телефона *</label>
+                        <input id="contact_phone" type="tel" name="phone" required
+                            pattern="[+]?[0-9\s\-]{10,15}"
+                            placeholder="+7 999 000-00-00"
+                            title="Номер телефона, от 10 до 15 цифр">
+                    </div>
+
+                    <div class="form_row">
+                        <label for="contact_email">Электронная почта</label>
+                        <input id="contact_email" type="email" name="email"
+                            placeholder="example@mail.ru">
+                    </div>
+
+                    <div class="form_row">
+                        <label for="contact_occasion">Повод для торта</label>
+                        <select id="contact_occasion" name="occasion">
+                            <option value="">-- Выберите повод --</option>
+                            <option value="birthday">День рождения</option>
+                            <option value="wedding">Свадьба</option>
+                            <option value="child">Детский праздник</option>
+                            <option value="corporate">Корпоратив</option>
+                            <option value="custom">Индивидуальный заказ</option>
+                        </select>
+                    </div>
+
+                    <div class="form_row">
+                        <p class="form_label">Желаемый вес торта:</p>
+                        <span class="radio_group">
+                            <input type="radio" name="weight" value="1-2" id="w1">
+                            <label for="w1">1–2 кг</label>
+                        </span>
+                        <span class="radio_group">
+                            <input type="radio" name="weight" value="2-3" id="w2" checked>
+                            <label for="w2">2–3 кг</label>
+                        </span>
+                        <span class="radio_group">
+                            <input type="radio" name="weight" value="3+" id="w3">
+                            <label for="w3">более 3 кг</label>
+                        </span>
+                    </div>
+
+                    <div class="form_row">
+                        <label for="contact_persons">Количество порций</label>
+                        <input id="contact_persons" type="number" name="persons"
+                            min="1" max="200" placeholder="10">
+                    </div>
+
+                    <div class="form_row">
+                        <label for="contact_message">Пожелания к заказу</label>
+                        <textarea id="contact_message" name="message" rows="4"
+                            placeholder="Опишите ваши пожелания по декору, надписи или вкусу..."></textarea>
+                    </div>
+                </div>
+
+                <div class="form_download">
+                    <div class="form_row">
+                        <label for="contact_file">Прикрепите фото для вдохновения (необязательно)</label>
+                        <input id="contact_file" type="file" name="photo" accept="image/*">
+                    </div>
+                    <div class="form_row form_agree">
+                        <input type="checkbox" id="contact_agree" name="agree" required>
+                        <label for="contact_agree">Я согласен(а) на обработку персональных данных *</label>
+                    </div>
+                </div>
+
+                <div class="form_submit">
+                    <input type="submit" value="Отправить заявку">
+                </div>
+
+            </form>
         </div>
     </section>
 
