@@ -7,20 +7,20 @@
                 <div class="footer_social">
                     <p>Мы в социальных сетях:</p>
                     <a href="http://vk.com" target="_blank">
-                        <img src="assets/img/icons/icon_5.png" alt="ВКонтакте">
+                        <img src="/assets/img/icons/icon_5.png" alt="ВКонтакте">
                     </a>
                     <a href="http://instagram.com" target="_blank">
-                        <img src="assets/img/icons/icon_6.png" alt="Инстаграм">
+                        <img src="/assets/img/icons/icon_6.png" alt="Инстаграм">
                     </a>
                 </div>
                 <div class="footer_menu">
                     <nav>
                         <ul>
-                            <li><a href="index.php">Главная</a></li>
-                            <li><a href="cakes.php">Готовые торты</a></li>
-                            <li><a href="filling.php">Начинка</a></li>
-                            <li><a href="delivery.php">Доставка</a></li>
-                            <li><a href="index.php#feedback">Контакты</a></li>
+                            <li><a href="/">Главная</a></li>
+                            <li><a href="/cakes/">Готовые торты</a></li>
+                            <li><a href="/filling/">Начинка</a></li>
+                            <li><a href="/delivery/">Доставка</a></li>
+                            <li><a href="/#feedback">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>

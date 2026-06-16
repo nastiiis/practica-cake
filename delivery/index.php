@@ -1,5 +1,5 @@
 <?php
-    include("inc/header.php");
+    include("../inc/header.php");
 ?>
 
     <section class="banner">
@@ -25,20 +25,12 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
-                                Дзержинский<br>
-                                Октябрьский<br>
-                                Калининский
-                            </td>
+                            <td>Дзержинский<br>Октябрьский<br>Калининский</td>
                             <td>ОТ 800 РУБЛЕЙ</td>
                             <td>200 РУБЛЕЙ</td>
                         </tr>
                         <tr>
-                            <td>
-                                Заельцовский<br>
-                                Железнодорожный<br>
-                                Центральный
-                            </td>
+                            <td>Заельцовский<br>Железнодорожный<br>Центральный</td>
                             <td>ОТ 1000 РУБЛЕЙ</td>
                             <td>300 РУБЛЕЙ</td>
                         </tr>
@@ -48,4 +40,4 @@
         </div>
     </section>
 
-<?php include("inc/footer.php"); ?>
+<?php include("../inc/footer.php"); ?>

@@ -1,6 +1,6 @@
 <?php
-    include("inc/header.php");
-    include("connect.php");
+    include("../inc/header.php");
+    include("../function/connect.php");
 ?>
 
     <section class="banner">
@@ -19,7 +19,7 @@
                 while ($row = $result->fetch_assoc()) {
                     $data .= sprintf('
                     <div class="cake">
-                        <img src="%s" alt="%s">
+                        <img src="/%s" alt="%s">
                         <div class="cake_descript">
                             <div class="cake_descript_text">
                                 <h2>%s</h2>
@@ -53,4 +53,4 @@
         </div>
     </section>
 
-<?php include("inc/footer.php"); ?>
+<?php include("../inc/footer.php"); ?>

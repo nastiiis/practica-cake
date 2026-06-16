@@ -1,0 +1,12 @@
+<?php
+    include("../inc/header.php");
+?>
+
+    <section class="answer">
+        <div class="content">
+            <h2>СПАСИБО ЗА ОБРАЩЕНИЕ!</h2>
+            <h3>МЫ СВЯЖЕМСЯ С ВАМИ В БЛИЖАЙШЕЕ ВРЕМЯ!</h3>
+        </div>
+    </section>
+
+<?php include("../inc/footer.php"); ?>
